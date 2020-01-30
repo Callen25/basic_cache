@@ -113,6 +113,8 @@ void read_file(char *filename, char **cache, int size)
         }
     }
 
+    fclose(read);
+
     free(line);
 
     for(int i = 0; i < size; i++)
